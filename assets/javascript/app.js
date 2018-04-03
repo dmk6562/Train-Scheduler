@@ -33,7 +33,8 @@ $("#submit-train").on("click", function(e) {
   // Get the input values
   var trainName = $("#train-name").val().trim();
   var destination = $("#destination").val().trim();
-  var firstTrainTime = ($("#train-time").val().trim(), "HH:mm");
+//   var firstTrainTime = ($("#train-time").val().trim(), "HH:mm");
+  var firstTrainTime = ($("#train-time").val().trim());
   var frequency = $("#frequency").val().trim();
 
 console.log(trainName);
@@ -116,7 +117,7 @@ row.append('<td>' + trnFrequency + "</td>")
 row.append('<td>' + nextArrival + "</td>")
 row.append('<td>' + minutesAway + "</td>")
 
-$("#trainTable > tbody").append(row)
+$("#train-table > tbody").append(row)
 
 });
 
